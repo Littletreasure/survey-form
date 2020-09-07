@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey form</title>
+  </head>
+  <body>
+    <div id="survey">
+      <div id="header">
+        <h1 id="title">Exciting Chocolate Survey</h1>
+        <p id="description">Please answer all questions truthfully</p>
+      </div>
+      <form id="survey-form">
+        <div class="group">
+          <label for="name" id="name-label" class="label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter name here"
+            class="input"
+          />
+        </div>
+        <div class="group">
+          <label for="email" id="email-label" class="label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter email address here"
+            class="input"
+          />
+        </div>
+        <div class="group">
+          <label for="number" id="number-label" class="label"
+            >How many chocolate bars do you eat per day?</label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="0"
+            max="20"
+            placeholder="Enter number here, max 20"
+            class="input"
+          />
+        </div>
+        <div class="group">
+          <label for="chocolate" class="label"
+            >What is your favourite chocolate bar?</label
+          >
+          <select id="dropdown" name="chocolate">
+            <option disabled selected value="favourite">
+              Choose favourite
+            </option>
+            <option value="mars">Mars Bar</option>
+            <option value="snickers">Snickers</option>
+            <option value="milky-way">Milky Way</option>
+            <option value="twix">Twix</option>
+            <option value="crunchie">Crunchie</option>
+          </select>
+        </div>
+        <div class="radio-container">
+          <p id="question">Do you like nuts and/or raisins in chocolate?</p>
+          <div class="radio">
+            <input
+              type="radio"
+              id="nuts"
+              name="nutsq"
+              value="nuts"
+              class="radio-button"
+            />
+            <label for="nuts">Nuts</label>
+          </div>
+          <div class="radio">
+            <input
+              type="radio"
+              id="raisins"
+              name="nutsq"
+              value="raisins"
+              class="radio-button"
+            />
+            <label for="raisins">Raisins</label>
+          </div>
+          <div class="radio">
+            <input
+              type="radio"
+              id="both"
+              name="nutsq"
+              value="both"
+              class="radio-button"
+            />
+            <label for="both">Both</label>
+          </div>
+          <div class="radio">
+            <input
+              type="radio"
+              id="none"
+              name="nutsq"
+              value="none"
+              class="radio-button"
+            />
+            <label for="none">None</label>
+          </div>
+        </div>
+        <div class="check-container">
+          <p id="question">What flavour chocolate do you like?</p>
+          <div class="check">
+            <input
+              type="checkbox"
+              id="milk"
+              name="flavourq"
+              value="milk"
+              class="check-box"
+            />
+            <label for="milk">Milk</label>
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              id="dark"
+              name="flavourq"
+              value="dark"
+              class="check-box"
+            />
+            <label for="dark">Dark</label>
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              id="white"
+              name="flavourq"
+              value="white"
+              class="check-box"
+            />
+            <label for="white">White</label>
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              id="mint"
+              name="flavourq"
+              value="mint"
+              class="check-box"
+            />
+            <label for="mint">Mint</label>
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              id="orange"
+              name="flavourq"
+              value="orange"
+              class="check-box"
+            />
+            <label for="orange">Orange</label>
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              id="coffee"
+              name="flavourq"
+              value="coffee"
+              class="check-box"
+            />
+            <label for="coffee">Coffee</label>
+          </div>
+        </div>
+        <div class="group">
+          <label class="label" for="comments"
+            >Please add any comments here</label
+          >
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Comment here"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
